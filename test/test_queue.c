@@ -27,6 +27,7 @@ void test_Queue_new_ShouldNotReturnNULL(void)
     Queue *queue = Queue_new();
     
     TEST_ASSERT_NOT_NULL(queue);
+    TEST_ASSERT_NULL(Queue_peek(queue));
     
     Queue_delete(queue);
 }
