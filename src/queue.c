@@ -1,3 +1,7 @@
+/*
+ *  Author: Huisu Ju <kng0258@naver.com>
+ *  License: MIT
+ */
 #include <assert.h>
 #include <stdlib.h>
 #include "queue.h"
