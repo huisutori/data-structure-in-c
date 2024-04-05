@@ -21,3 +21,5 @@ void Queue_delete(Queue *queue);
 void Queue_push(Queue *queue, QueueNode *node);
 QueueNode *Queue_pop(Queue *queue);
 QueueNode *Queue_peek(Queue *queue);
+
+void Queue_iterate(Queue *queue, void (*iter)(QueueNode *node));

@@ -66,3 +66,14 @@ QueueNode *Queue_peek(Queue *queue)
     
     return queue->head;
 }
+
+void Queue_iterate(Queue *queue, void (*iter)(QueueNode *node))
+{
+    assert(queue);
+    
+    QueueNode *cur = queue->head;
+    while (cur) {
+        iter(cur);
+        cur = cur->next;
+    }
+}
